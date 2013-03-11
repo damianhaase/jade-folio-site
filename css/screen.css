@@ -49,3 +49,199 @@ table {
 
 /*  site specific styles  */
 
+body {
+	font-family: 'Podkova', courier, serif;
+	background-color: #e9e7e7;
+	color: #262626;
+}
+
+.sans {
+	font-family: 'Open Sans', arial, sans-serif;
+}
+
+.shadow {
+	box-shadow: 0 3px 15px #999;
+	-webkit-box-shadow: 0 3px 15px #999;
+	-moz-box-shadow: 0 3px 15px #999;
+}
+
+.header {
+	background-image:url('/img/noise.png');
+	background-color: #d9d9d9;
+	border-bottom: 1px solid #bababa;
+}
+
+.name {
+	padding: 10px;
+	margin: 10px 0 30px 0;
+}
+
+.name-head {
+	font-size: 1.7em;
+	font-weight: 700;
+}
+
+.name-subhead {
+	text-transform:uppercase;
+	color: #4d4d4d;
+}
+
+.name-subhead .job-title {
+	font-weight: 700;
+}
+
+.ribbon {
+	width: 169px;
+	position: absolute;
+	left:50%;
+    margin-left:-100px;
+    z-index: 5;
+}
+
+.nav ul {
+	float: right;
+}
+
+.nav ul > li {
+	display: inline-block;
+}
+
+.nav-button {
+	width: 68px;
+	height: 68px;
+	border-radius: 34px;
+	-webkit-border-radius: 34px;
+	-moz-border-radius: 34px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;	
+	background-position:center;
+	background-color: #808080;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+}
+
+.nav-button:hover {
+	background-color: #eea372;
+}
+
+#resume {
+	background-image:url('/img/resume.png');
+}
+
+#portfolio {
+	background-image:url('/img/portfolio.png');
+}
+
+#contact {
+	background-image:url('/img/contact.png');
+}
+
+.main-page {
+	background-color: #fff;
+	border: 1px solid #d1cfcf;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	position: relative;
+	top: -20px;
+	width: 95%;
+	max-width: 1140px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.inset /* these override global .grid values to make a smaller grid within the page */ {
+	width: 75%;
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+.title-block {
+	text-align: center;	
+	width: 100%;
+}
+
+.page-title {
+	font-size: 2.5em;
+	font-weight: 700;
+	text-align: center;
+	margin: 1.5em 0 1.5em 0;
+	padding-bottom: .4em;
+	border-bottom: 1px solid #eee;
+	display: inline-block;
+	width: 100%;
+}
+
+.body-text {
+	line-height: 1.2em;
+}
+
+.section {
+	margin: 1em 0 2em 0;
+	overflow: auto;
+}
+
+.section-label {
+	font-size: 1.4em;
+}
+
+.job-entry {
+	margin-bottom: 1.4em;
+}
+
+.job {
+	margin-bottom: .4em;
+}
+
+.job-title, .skill-category, .description-header {
+	font-weight: 700;
+}
+
+.job-period {
+	font-size: .8em;
+	color: #999999;
+	line-height: 1.2em;
+	margin-bottom: .3em;
+}
+
+.stacked-skill-list {
+	margin-bottom: 1.5em;
+}
+
+.footer {
+	background-image:url('/img/noise.png');
+	background-color: #545454;
+	border-top: 1px solid #bababa;
+	position: relative;
+	top: -30px;
+	padding: 1.2em 0 4em 0;
+	color: #949494;
+	line-height: 1.2em;
+}
+
+.site-description {
+	font-size: .8em;
+}
+
+.jade-description {
+	font-size: .7em;
+}
+
+.jade-description > .description-header {
+	margin-bottom: 1em;
+}
+
+
+
+@media handheld, only screen and (max-width: 767px) {
+	.inset {
+		/* these override global .grid values to make a smaller grid within the page */
+		width: 100%;
+	}
+
+	.section {
+		padding-right: 20px;
+	}
+
+}
