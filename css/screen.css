@@ -130,7 +130,7 @@ body {
 	background-color: #eeeeee;
 	border: .375em solid #808080;
 	background-repeat: no-repeat;
-	margin-left: .6em;
+	margin: 0 .3em 0 .3em;
 	background-size: 90%;
 }
 
@@ -197,6 +197,7 @@ body {
 
 .section-label {
 	font-size: 1.4em;
+	margin-bottom: 1em;
 }
 
 .job-entry {
@@ -241,8 +242,12 @@ body {
 	font-size: .7em;
 }
 
+.site-description, .jade-description {
+	margin-bottom: 1.6em;
+}
+
 .jade-description > .description-header {
-	margin-bottom: 1em;
+	margin-bottom: .4em;
 }
 
 
