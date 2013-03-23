@@ -18,7 +18,7 @@ body {
 
 [class*='col-'] {
 	float: left;
-	padding-right: 20px;
+	padding-right: 1.25em;
 }
 
 [class*='col-']:last-of-type {
@@ -28,7 +28,7 @@ body {
 .grid {
 	width: 100%;
 	max-width: 1140px;
-	min-width: 755px;
+	min-width: 12.5em;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -126,7 +126,7 @@ body {
 	width: 58.33%
 }
 
-@media handheld, only screen and (max-width: 767px) {
+@media handheld, only screen and (max-width: 767px), only screen and (min-device-width : 320px) and (max-device-width: 480px) {
 
 	
 	.grid {
@@ -148,4 +148,21 @@ body {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+
+	.grid-pad > [class*='col-']:last-of-type {
+		padding-right: 10px;
+	}
+
+}
+
+@media handheld, only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+	[class*='col-'] {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.grid-pad > [class*='col-']:last-of-type {
+		padding-right: 20px;
+	}
+
 }
