@@ -392,8 +392,8 @@ a:hover {
 }
 
 .portfolio-thumbnail {
-	height: 162px;
-	width: 240px;
+	height: 10.125em;
+	width: 15em;
 	margin: 0 auto;
 	background-color: #c7c9c8;
 	border-radius: .25em;
