@@ -144,14 +144,19 @@ a:hover {
 	font-size: 1.25em;
 }
 
-.nav-button-home, .nav-button-inner {
+.replace-text {
+	overflow: hidden;	
+	text-indent: 100%;
 	white-space: nowrap;
+}
+
+.nav-button-home, .nav-button-inner, .linkedin-badge {
 	background-position:center;
-	background-color: #eeeeee;
 	background-repeat: no-repeat;
 }
 
 .nav-button-inner {
+	background-color: #eeeeee;
 	width: 4.25em;
 	height: 4.25em;
 	border-radius: 2.125em;
@@ -160,11 +165,10 @@ a:hover {
 	margin: 0 .3em;
 	border: .375em solid #808080;
 	background-size: 90%;
-	overflow: hidden;	
-	text-indent: 100%;
 }
 
 .nav-button-home {
+	background-color: #eeeeee;
 	width: 8em;
 	height: 8em;
 	border-radius: 4em;
@@ -189,6 +193,21 @@ a:hover {
 
 #contact {
 	background-image:url('/img/contact-icon.png');
+}
+
+.linkedin-badge {
+	background-image:url('/img/linkedin-logo.png');
+	height: 1.75em;
+	width: 4.75em;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: .125em;
+	-webkit-border-radius: .125em;
+	-moz-border-radius: .125em;	
+	vertical-align: middle;
+	background-size: 85%;
+	position: relative;
+	top: -.125em;
 }
 
 .main-page {
