@@ -114,7 +114,7 @@ a:hover {
 	color: #4d4d4d;
 }
 
-.name-subhead .job-title {
+.name-subhead .job-title, .linkedin-connect, #email-submit {
 	font-weight: 700;
 }
 
@@ -144,14 +144,19 @@ a:hover {
 	font-size: 1.25em;
 }
 
-.nav-button-home, .nav-button-inner {
+.replace-text {
+	overflow: hidden;	
+	text-indent: 100%;
 	white-space: nowrap;
+}
+
+.nav-button-home, .nav-button-inner, .linkedin-badge {
 	background-position:center;
-	background-color: #eeeeee;
 	background-repeat: no-repeat;
 }
 
 .nav-button-inner {
+	background-color: #eeeeee;
 	width: 4.25em;
 	height: 4.25em;
 	border-radius: 2.125em;
@@ -160,11 +165,10 @@ a:hover {
 	margin: 0 .3em;
 	border: .375em solid #808080;
 	background-size: 90%;
-	overflow: hidden;	
-	text-indent: 100%;
 }
 
 .nav-button-home {
+	background-color: #eeeeee;
 	width: 8em;
 	height: 8em;
 	border-radius: 4em;
@@ -189,6 +193,21 @@ a:hover {
 
 #contact {
 	background-image:url('/img/contact-icon.png');
+}
+
+.linkedin-badge {
+	background-image:url('/img/linkedin-logo.png');
+	height: 1.75em;
+	width: 4.75em;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: .125em;
+	-webkit-border-radius: .125em;
+	-moz-border-radius: .125em;	
+	vertical-align: middle;
+	background-size: 85%;
+	position: relative;
+	top: -.125em;
 }
 
 .main-page {
@@ -304,6 +323,60 @@ a:hover {
 
 .jade-description > .description-header {
 	margin-bottom: .4em;
+}
+
+.linkedin-connect {
+	text-align: right;
+	position: relative;
+	top: -1.5em;
+}
+
+.email-form {
+	margin-bottom: 4em;
+}
+
+#email-message {
+	font-family: 'Podkova', courier, serif;
+	font-size: 1.4em;	
+	width: 100%;
+	height: 10em;
+	border: 1px solid #ccc;
+	-moz-box-shadow:    inset 0 0 10px #ccc;
+	-webkit-box-shadow: inset 0 0 10px #ccc;
+	box-shadow:         inset 0 0 10px #ccc;	
+	border-radius: .125em;
+	-webkit-border-radius: .125em;
+	-moz-border-radius: .125em;
+}
+
+#email-submit {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #717171), color-stop(1, #545454) );
+	background: -moz-linear-gradient( center top, #717171 5%, #545454 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#717171', endColorstr='#545454');
+	background-color: #717171;
+	-moz-border-radius: .125em;
+	-webkit-border-radius: .125em;
+	border-radius: .125em;
+	border: 1px solid #dcdcdc;
+	display: inline-block;
+	color: #dcdcdc;
+	font-family: 'Podkova', courier, serif;
+	font-size: 2em;
+	padding: .25em 1em;
+	margin-top: .5em;
+	text-decoration: none;
+}
+
+#email-submit:hover {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #545454), color-stop(1, #717171) );
+	background: -moz-linear-gradient( center top, #545454 5%, #717171 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#545454', endColorstr='#717171');
+	background-color: #545454;
+}
+
+#email-submit:active {
+	position: relative;
+	top: 1px;
 }
 
 
