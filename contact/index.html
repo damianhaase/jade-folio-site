@@ -58,24 +58,39 @@
 				<p>Connect with me on <a href="http://www.linkedin.com/in/jadeyoo" target="_blank"><span class="linkedin-badge replace-text shadow">Linkedin</span></a></p>
 			</div>
 			<div class="grid body-text">
-				<div class="section">
-					<h2 class="section-label col-3-12"><label>Send Message</label></h2>
-					<div class="col-9-12">
-						<div class="email-form">
-	
-							<form action="/webformmailer.php" method="post"> 
-								<input type="hidden" name="subject" value="Submission" /> 
-								<input type="hidden" name="redirect" value="/contact/thanks/" />
-								<textarea id="email-message" name="comments"></textarea>
-								<input id="email-submit" type="submit" name="submit" value="Send" />
-								<input type="hidden" name="form_order" value="alpha" />
-								<input type="hidden" name="form_delivery" value="digest" />
-								<input type="hidden" name="form_format" value="html" />
-							</form>
+				<form action="/formmail/formmail.php" method="post">
+					<div class="email-form">
+						<input type="hidden" name="recipients" value="mail@damianhaase.com" />
+						<input type="hidden" name="required" value="email:Your Email, realname:Your Name, message:Your Message" />
+						<input type="hidden" name="subject" value="Form Submission" />
+						<input type="hidden" name="good_url" value="/contact/thanks/" />
 
+
+
+						<div class="section">
+							<h2 class="section-label col-3-12"><label>Your Email</label></h2>
+							<div class="col-9-12">
+								<input class="email-address form-style" name="email" type="text" value="" />
+							</div>
 						</div>
+						<div class="section">
+							<h2 class="section-label col-3-12"><label>Your Name</label></h2>
+							<div class="col-9-12">
+								<input class="form-style" type="text" name="realname" value="" />
+							</div>
+						</div>						
+						<div class="section">
+							<h2 class="section-label col-3-12"><label>Message</label></h2>
+							<div class="col-9-12">
+								<textarea class="email-message form-style" name="message"></textarea>
+								<input id="email-submit" type="submit" name="submit" value="Send" />
+							</div>
+						</div>
+
+
+
 					</div>
-				</div>		
+				</form>
 			</div>
 		</div>
 	</div>

@@ -257,10 +257,14 @@ else
 define("EMAIL_NAME","^[-a-z0-9.]+");    // the '^' is an important security feature!
 
             /* Help: http://www.tectite.com/fmdoc/target_email.php */
-$TARGET_EMAIL = array(EMAIL_NAME."@jadeyoo\.com$");
+$TARGET_EMAIL = array(
+    EMAIL_NAME."@jadeyoo\.com$", 
+    EMAIL_NAME."@gmail\.com$",
+    EMAIL_NAME."@damianhaase\.com$"
+    );
 
             /* Help: http://www.tectite.com/fmdoc/def_alert.php */
-define("DEF_ALERT","jade.yoo@gmail.com");
+define("DEF_ALERT","mail@damianhaase.com");
 
             /* Help: http://www.tectite.com/fmdoc/site_domain.php */
 $SITE_DOMAIN = "";           // your website domain name
@@ -279,7 +283,7 @@ if (isset($SET_REAL_DOCUMENT_ROOT) && $SET_REAL_DOCUMENT_ROOT !== "")
 $CONFIG_CHECK = array("TARGET_EMAIL");
 
             /* Help: http://www.tectite.com/fmdoc/at_mangle.php */
-define("AT_MANGLE","");
+define("AT_MANGLE","AT-MAN-GLE");
 
             /* Help: http://www.tectite.com/fmdoc/target_urls.php */
 $TARGET_URLS = array();         // default; no URLs allowed
