@@ -344,7 +344,7 @@ $TEMPLATEDIR = "";                  // directory for template files; empty strin
                                     // if you don't have any templates
 
             /* Help: http://www.tectite.com/fmdoc/templateurl.php */
-$TEMPLATEURL = "";                  // default; no template URL
+$TEMPLATEURL = $SCHEME.$SERVER."/contact";                  // default; no template URL
 
             /* Help: http://www.tectite.com/fmdoc/multiformdir.php */
 $MULTIFORMDIR = "";         // directory for multi-form template files; empty string
@@ -437,7 +437,7 @@ define("DB_SEE_INPUT",false);   // set to true to just see the input values
 define("DB_SEE_INI",false);     // set to true to just see the ini file
 
             /* Help: http://www.tectite.com/fmdoc/maxstring.php */
-define("MAXSTRING",1024);       // maximum string length for a value
+define("MAXSTRING",10240);       // maximum string length for a value
 
             /* Help: http://www.tectite.com/fmdoc/require_captcha.php */
 $REQUIRE_CAPTCHA = "";          // set to a message string if your forms
