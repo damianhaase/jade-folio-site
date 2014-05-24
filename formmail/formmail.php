@@ -344,7 +344,7 @@ $TEMPLATEDIR = "";                  // directory for template files; empty strin
                                     // if you don't have any templates
 
             /* Help: http://www.tectite.com/fmdoc/templateurl.php */
-$TEMPLATEURL = "/contact/";                  // default; no template URL
+$TEMPLATEURL = $SCHEME.$SERVER."/contact";                  // default; no template URL
 
             /* Help: http://www.tectite.com/fmdoc/multiformdir.php */
 $MULTIFORMDIR = "";         // directory for multi-form template files; empty string
