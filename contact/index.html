@@ -28,6 +28,8 @@
 		  })();
 
 		</script>
+
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 		
 	</head>
 <body>
@@ -44,7 +46,7 @@
 				<ul>
 					<li><a href="/resume/"><div class="nav-button-inner replace-text shadow" id="resume">Resume</div></a></li>
 					<li><a href="/portfolio/"><div class="nav-button-inner replace-text shadow" id="portfolio">Portfolio</div></a></li>
-					<li><a href="/contact/"><div class="nav-button-inner replace-text shadow" id="contact">Contact</div></a></li>
+					<li><a href="/contact/"><div class="nav-button-inner replace-text shadow selected" id="contact">Contact</div></a></li>
 				</ul>
 			</div>
 		</div>
@@ -83,6 +85,8 @@
 							<h2 class="section-label col-3-12"><label>Message</label></h2>
 							<div class="col-9-12">
 								<textarea class="email-message form-style" name="message"></textarea>
+								<div class="g-recaptcha" data-sitekey="6LeCzwsTAAAAAJj2gmiPUNswjtOdHYTWuUWDs5c8"></div>
+								<input type="hidden" name="derive_fields" value="imgverify=g-recaptcha-response" />
 								<input id="email-submit" type="submit" name="submit" value="Send" />
 							</div>
 						</div>

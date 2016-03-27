@@ -167,6 +167,10 @@ a:hover {
 	background-size: 90%;
 }
 
+.selected {
+	border-color: #eea372;	
+}
+
 .nav-button-home {
 	background-color: #eeeeee;
 	width: 8em;
@@ -243,6 +247,12 @@ a:hover {
 .inset /* these override global .grid values to make a smaller grid within the page */ {
 	width: 75%;
 	max-width: 940px;
+	margin: 0 auto;
+}
+
+.inset-portfolio-detail /* these override global .grid values to make a smaller grid within the page */ {
+	width: 95%;
+	max-width: 1100px;
 	margin: 0 auto;
 }
 
@@ -390,22 +400,111 @@ a:hover {
 .portfolio-list-item {
 	text-align: center;
 	line-height: 1.5em;
-	margin-bottom: 2.5em;
+	/* margin-bottom: 2.5em; */
 }
 
-.portfolio-list-item > h2 {
+.portfolio-list-item h2 {
 	font-size: 1.25em;
 	font-weight: 700;
 }
 
 .portfolio-thumbnail {
-	height: 10.125em;
+	height: 11em;
 	width: 15em;
 	margin: 0 auto;
 	background-color: #c7c9c8;
 	border-radius: .25em;
 	-webkit-border-radius: .25em;
 	-moz-border-radius: .25em;
+	margin-bottom: 1em;
+}
+
+#cycling-class-booking {
+	background-image: url("/img/cycling-class-booking-preview.png");
+    background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+#ux-ui-standardization {
+	background-image: url("/img/ux-ui-standardization-preview.png");
+    background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+#trainer-app-programming {
+	background-image: url("/img/trainer-app-programming-preview.png");
+    background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+
+
+.portfolio-detail-thumbnail img {
+	margin: 0 auto;
+	border: 1px solid;
+}
+
+.hero-image {
+	height: 40em;
+	width: 100%;
+	background-color: #c7c9c8;
+	margin-top: 2em;
+	display: table-cell;
+    vertical-align: bottom;
+    padding-bottom: 2em;
+    padding-right: 20%;
+	background-position: center center;
+    background-repeat: no-repeat;
+	background-size: cover;    
+}
+
+
+#cycling-class-booking-hero {
+	background-image: url("/portfolio/cycling-class-booking/img/cycling-class-booking-hero.jpg");
+}
+
+#ux-ui-standardization-hero {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/portfolio/ux-ui-standardization/img/ux-ui-standardization-hero.jpg");
+}
+
+#trainer-app-programming-hero {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/portfolio/trainer-app-programming/img/trainer-app-programming-hero.jpg");
+}
+
+.hero-image h1 {
+	font-size: 1.75em;
+	font-weight: 700;
+	margin-bottom: .5em;
+}
+
+.hero-image p {
+	font-size: 1.2em;
+	margin-bottom: .5em;
+}
+
+.hero-text-white {
+    color: #fff;
+}
+
+.portfolio-detail-section {
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+.portfolio-detail-section h2 {
+	font-size: 1.25em;
+	font-weight: 700;
+	margin-bottom: .5em;
+}
+
+.portfolio-detail-section p {
+	margin-bottom: .5em;
+	color: #696969;
+	padding-right: 20%;
+}
+
+.back-link {
+	margin-top: 2em;
 	margin-bottom: 1em;
 }
 
