@@ -54,8 +54,10 @@ img {
 /*  site specific styles  */
 
 body {
-	font-family: 'Podkova', courier, serif;
+	font-family: 'Open Sans', arial, sans-serif;
 	background-color: #e9e7e7;
+	letter-spacing: .06em;
+	font-size: 14px;
 }
 
 body, a {
@@ -68,10 +70,6 @@ a:link {
 
 a:hover {
 	text-decoration: underline;
-}
-
-.sans {
-	font-family: 'Open Sans', arial, sans-serif;
 }
 
 .shadow {
@@ -89,6 +87,7 @@ a:hover {
 	background-image:url('/img/noise.png');
 	background-color: #d9d9d9;
 	border-bottom: 1px solid #bababa;
+	text-transform:uppercase;
 }
 
 .name, .name-home {
@@ -107,33 +106,25 @@ a:hover {
 .name-head {
 	font-size: 1.7em;
 	font-weight: 700;
+	margin-bottom: .3em;
 }
 
 .name-subhead {
-	text-transform:uppercase;
 	color: #4d4d4d;
+	display: inline;
 }
 
 .name-subhead .job-title, .linkedin-connect, #email-submit {
 	font-weight: 700;
 }
 
-.ribbon {
-	width: 9.75em;
-	height: 9.75em;
-	position: absolute;
-	left:50%;
-    margin-left:-4.875em;
-    z-index: 5;
-    text-align: center;
-}
-
-.nav ul {
+.nav {
 	float: right;
 }
 
 .nav ul > li, .nav-home ul > li {
 	display: inline-block;
+	padding-right: .75em;
 }
 
 .nav-home {
@@ -168,7 +159,8 @@ a:hover {
 }
 
 .selected {
-	border-color: #eea372;	
+	border-bottom: 5px solid;
+	border-color: #808080;
 }
 
 .nav-button-home {
@@ -187,17 +179,6 @@ a:hover {
 	border-color: #eea372;
 }
 
-#resume {
-	background-image:url('/img/resume-icon.png');
-}
-
-#portfolio {
-	background-image:url('/img/portfolio-icon.png');
-}
-
-#contact {
-	background-image:url('/img/contact-icon.png');
-}
 
 .linkedin-badge {
 	background-image:url('/img/linkedin-logo.png');
@@ -272,8 +253,26 @@ a:hover {
 	width: 100%;
 }
 
+.jade {
+	margin-top: 6em;
+	text-align: center;
+}
+
+.jade img {
+	border-radius: 50%;
+}
+
+.intro {
+	margin-top: 1.5em; 
+	margin-bottom: .75em;
+}
+
+.intro p {
+	margin-bottom: .75em;
+}
+
 .body-text {
-	line-height: 1.2em;
+	line-height: 1.8em;
 }
 
 .section {
@@ -310,30 +309,13 @@ a:hover {
 }
 
 .footer {
-	background-image:url('/img/noise.png');
-	background-color: #545454;
-	border-top: 1px solid #bababa;
-	position: relative;
-	top: -2em;
-	padding: 1.2em 0 4em 0;
+	text-align: right;
 	color: #949494;
-	line-height: 1.2em;
-}
-
-.site-description {
 	font-size: .8em;
 }
 
-.jade-description {
-	font-size: .7em;
-}
-
-.site-description, .jade-description {
-	margin-bottom: 1.6em;
-}
-
-.jade-description > .description-header {
-	margin-bottom: .4em;
+.footer p {
+	padding-bottom: 1em;
 }
 
 .linkedin-connect {
@@ -347,15 +329,8 @@ a:hover {
 }
 
 .form-style {
-	font-family: 'Podkova', courier, serif;
 	font-size: 1.4em;
 	border: 1px solid #ccc;
-	-moz-box-shadow:    inset 0 0 10px #ccc;
-	-webkit-box-shadow: inset 0 0 10px #ccc;
-	box-shadow:         inset 0 0 10px #ccc;	
-	border-radius: .125em;
-	-webkit-border-radius: .125em;
-	-moz-border-radius: .125em;
 }
 
 .email-address {
@@ -378,7 +353,6 @@ a:hover {
 	border: 1px solid #dcdcdc;
 	display: inline-block;
 	color: #dcdcdc;
-	font-family: 'Podkova', courier, serif;
 	font-size: 2em;
 	padding: .25em 1em;
 	margin-top: .5em;
@@ -409,34 +383,22 @@ a:hover {
 }
 
 .portfolio-thumbnail {
-	height: 11em;
-	width: 15em;
+	max-height: 300px;
 	margin: 0 auto;
-	background-color: #c7c9c8;
-	border-radius: .25em;
-	-webkit-border-radius: .25em;
-	-moz-border-radius: .25em;
 	margin-bottom: 1em;
+	overflow: hidden;
 }
 
-#cycling-class-booking {
-	background-image: url("/img/cycling-class-booking-preview.png");
-    background-repeat: no-repeat;
-	background-size: cover;	
+img.scale {
+	/* corrects inline gap in enclosing div */
+	display: block;
+	max-width: 100%;
+	/* just in case, to force correct aspect ratio */
+	height: auto !important;
+	width: auto\9; /* ie8+9 */
+	/* lt ie8 */
+	-ms-interpolation-mode: bicubic; 
 }
-
-#ux-ui-standardization {
-	background-image: url("/img/ux-ui-standardization-preview.png");
-    background-repeat: no-repeat;
-	background-size: cover;	
-}
-
-#trainer-app-programming {
-	background-image: url("/img/trainer-app-programming-preview.png");
-    background-repeat: no-repeat;
-	background-size: cover;	
-}
-
 
 
 .portfolio-detail-thumbnail img {
@@ -460,15 +422,15 @@ a:hover {
 
 
 #cycling-class-booking-hero {
-	background-image: url("/portfolio/cycling-class-booking/img/cycling-class-booking-hero.jpg");
+	background-image: url("/cycling-class-booking/img/cycling-class-booking-hero.jpg");
 }
 
 #ux-ui-standardization-hero {
-	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/portfolio/ux-ui-standardization/img/ux-ui-standardization-hero.jpg");
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/ux-ui-standardization/img/ux-ui-standardization-hero.jpg");
 }
 
 #trainer-app-programming-hero {
-	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/portfolio/trainer-app-programming/img/trainer-app-programming-hero.jpg");
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/trainer-app-programming/img/trainer-app-programming-hero.jpg");
 }
 
 .hero-image h1 {
@@ -510,103 +472,3 @@ a:hover {
 
 
 
-@media handheld, only screen and (max-width: 767px), only screen and (min-device-width : 320px) and (max-device-width: 480px) {
-	.inset {
-		/* these override global .grid values to make a smaller grid within the page */
-		width: 100%;
-	}
-
-	.ribbon {
-		width: 6.25em;
-		height: 6.25em;
-	    margin-left:-3.125em;
-	}
-
-	.name, .name-home {
-		text-align: center;
-		margin-top: 5em;
-	}
-
-	.name {
-		margin-bottom: .5em;
-	}
-
-	.name-home {
-		margin-bottom: 2em;		
-	}	
-
-	.nav {
-		text-align: center;
-		margin-bottom: 2em;
-	}
-
-	.nav ul {
-		float: none;		
-	}
-
-	.page-title {
-		margin: .75em 0;
-	}
-
-	.section {
-		padding-right: 1.25em;
-	}
-
-	.welcome {
-		margin: 1em 0 2em 0;
-		font-size: 1.4em;
-	}
-
-	.nav-home ul > li {
-		font-size: 1em;
-	}
-
-	.nav-button-home {
-		width: 5em;
-		height: 5em;
-		border-radius: 2.5em;
-		-webkit-border-radius: 2.5em;
-		-moz-border-radius: 2.5em;
-		margin: .75em;
-		border: .4em solid #808080;
-		background-size: 70%;
-	}
-
-	.home-content {
-		margin-bottom: 5em;
-	}
-
-}
-
-@media handheld, only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
-	body {
-		font-size: 250%;
-	}
-
-	.ribbon {
-		width: 8em;
-		height: 8em;
-	    margin-left:-4em;
-	}
-
-	.name, .name-home {
-		text-align: center;
-		margin-top: 4em;
-	}
-
-	.name {
-		margin-bottom: .5em;
-	}
-
-	.name-home {
-		margin-bottom: 2em;		
-	}
-
-	.page-title {
-		margin: .75em 0 0 0;
-	}
-
-	.welcome {
-		margin-bottom: 1em;
-	}	
-}
