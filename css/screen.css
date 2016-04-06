@@ -452,6 +452,10 @@ img.scale {
 	background-position: center;
 }
 
+#amex-fraud-hero {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/amex-fraud/img/amex-fraud-hero.png");
+}
+
 .hero-image h1 {
 	font-size: 1.75em;
 	font-weight: 700;
