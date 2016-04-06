@@ -464,6 +464,10 @@ img.scale {
 	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7) ), url("/samsung-support/img/samsung-support-hero.png");
 }
 
+#ios-home-nav-hero {
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7) ), url("/ios-home-nav/img/ios-home-nav-hero.png");
+}
+
 .hero-image h1 {
 	font-size: 1.75em;
 	font-weight: 700;
