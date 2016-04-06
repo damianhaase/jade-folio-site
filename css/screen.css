@@ -141,14 +141,6 @@ a:hover {
 	padding-right: .75em;
 }
 
-.nav-home {
-	margin-bottom: 3em;
-}
-
-.nav-home ul > li {
-	font-size: 1.25em;
-}
-
 .replace-text {
 	overflow: hidden;	
 	text-indent: 100%;
@@ -468,6 +460,10 @@ img.scale {
 	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7) ), url("/ios-home-nav/img/ios-home-nav-hero.png");
 }
 
+#product-hero {
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7) ), url("/product/img/product-hero.jpg");
+}
+
 .hero-image h1 {
 	font-size: 1.75em;
 	font-weight: 700;
@@ -494,7 +490,7 @@ img.scale {
 	margin-bottom: .5em;
 }
 
-.portfolio-detail-section p, ul {
+.portfolio-detail-section > p ul {
 	margin-bottom: .5em;
 	color: #696969;
 	padding-right: 20%;
