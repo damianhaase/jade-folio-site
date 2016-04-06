@@ -64,6 +64,20 @@ body, a {
 	color: #262626;
 }
 
+strong {
+	font-weight: 700;
+}
+
+.bullets1 {
+	list-style: initial;
+	padding-left: 2em;
+}
+
+.bullets2 {
+	list-style: circle;
+	padding-left: 4em;
+}
+
 a:link {
 	text-decoration: none;
 }
@@ -433,6 +447,11 @@ img.scale {
 	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/trainer-app-programming/img/trainer-app-programming-hero.jpg");
 }
 
+#ambient-experience-hero {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/ambient-experience/img/ambient-experience-hero.jpg");
+	background-position: center;
+}
+
 .hero-image h1 {
 	font-size: 1.75em;
 	font-weight: 700;
@@ -459,7 +478,7 @@ img.scale {
 	margin-bottom: .5em;
 }
 
-.portfolio-detail-section p {
+.portfolio-detail-section p, ul {
 	margin-bottom: .5em;
 	color: #696969;
 	padding-right: 20%;
