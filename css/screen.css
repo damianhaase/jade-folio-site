@@ -468,6 +468,11 @@ img.scale {
 	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7) ), url("/pilates-purchase/img/pilates-purchase-hero.jpg");
 }
 
+#join-flow-hero {
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7) ), url("/join-flow/img/join-flow-hero.jpg");
+}
+
+
 
 .hero-image h1 {
 	font-size: 1.75em;
