@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Jade Yoo: Equinox Join Flow</title>
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" >
+		
+		<link rel="stylesheet" type="text/css" media="all" href="/css/simplegrid.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/css/screen.css" />
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-3392659-4']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+		
+	</head>
+<body>
+	<div class="header">
+		<div class="grid">
+			<div class="name col-1-1">
+				<p class="name-head"><a href="/">Jade Yoo</a></p>
+				<p class="name-subhead"><span class="job-title">UX Designer</span> for a Better Web</p>
+				<div class="nav">
+					<ul>
+						<li><a href="/">Portfolio</a></li>
+						<li><a href="/resume/">Resume</a></li>
+						<li><a href="/contact/">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main-page shadow body-text">
+		<div class="inset-portfolio-detail">
+			<div class="col-1-1 back-link">
+				<a href="/">&lt; back to list</a>
+			</div>
+		</div>
+
+		<div class="hero-image hero-text-white" id="join-flow-hero">
+			<div class="inset-portfolio-detail">
+				<h1>Join Flow</h1>
+				<p>The objective was to enhance the membership sales by improving the club location selection feature within the Join flow. The user goal of deciding between clubs is not well afforded by the current design; it allows users to see only one club at a time, and its most expensive and the least expensive membership types. There are no features to compare one club to another based on locations, prices, offerings or amenities.</p>
+				<p>Business required secondary features such as having a dedicated marketing space to highlight nation-wide promotions throughout the purchase process.</p>
+				<p>The technical limitation was to use Google Place and Maps API, and no custom search engine to be used.</p>				
+			</div>
+		</div>
+
+		<div class="inset-portfolio-detail">
+			<div class="col-1-1 portfolio-detail-section">
+				<h2>Current Flow</h2>
+			</div>
+		</div>
+
+		<div class="grid grid-pad body-text">
+			<div class="col-6-12 portfolio-list-item">
+				<div class="portfolio-detail-thumbnail">
+					<img src="/join-flow/img/join-flow-1.png"></img>
+				</div>
+			</div>
+			<div class="col-6-12 portfolio-list-item">
+				<div class="portfolio-detail-thumbnail">
+					<img src="/join-flow/img/join-flow-2.png"></img>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid grid-pad body-text">
+			<div class="col-6-12 portfolio-list-item">
+				<div class="portfolio-detail-thumbnail">
+					<img src="/join-flow/img/join-flow-3.png"></img>
+				</div>
+			</div>
+			<div class="col-6-12 portfolio-list-item">
+				<div class="portfolio-detail-thumbnail">
+					<img src="/join-flow/img/join-flow-4.png"></img>
+				</div>
+			</div>
+		</div>			
+
+		<div class="inset-portfolio-detail">
+			<div class="col-1-1 portfolio-detail-section">
+				<p>Using a search box similar to the Starbucks store finder was requested by the product team.</p>
+			</div>
+		</div>
+
+		<div class="grid grid-pad body-text">
+			<div class="col-6-12 portfolio-list-item">
+				<div class="portfolio-detail-thumbnail">
+					<img src="/join-flow/img/starbucks.png"></img>
+				</div>
+			</div>
+		</div>	
+
+		<div class="inset-portfolio-detail">
+			<div class="col-1-1 portfolio-detail-section">
+				<h2>The Redesign</h2>				
+				<p>My redesign of location selection for the Join flow re-used a design pattern that I had established earlier on the Clubs page.  A previous version of the Clubs page had showed all the clubs on a map on page load, which became a cost problem for Equinox due to the high traffic the page got. We needed a different flow which hid the map by default, but offered a map when users needed it. Also it helps users to get to filters and keyword search as a primary search system.</p>
+				<p>I came up with a hypothesis and design solution based on <a href="http://www.sebastianmeier.eu/wp-content/uploads/2014/10/location_search_patterns_v7.pdf" target="_blank">this research</a>. The design allowed users to search based on natural language terms, and it shows location options with filters to narrow down results by amenities. The command to expand the map from the top was easy to see, but didn’t unnecessarily display the map. This saved Equinox $20,000 per month in Google Maps charges.</p>
+			</div>
+		</div>
+
+		<div class="inset-portfolio-detail">
+			<div class="col-1-1 portfolio-detail-section">
+				<p>Another enhancement I made was taking the review out of the step process. On step 2, I included the total price on the right side rail so the users can see the summary of cost before they get to the review stage. I reiterated again on the review page with the rest of billing information. The current design had the review content as a part of step 3, and it sat under the button triggering purchase. This pattern seemed confusing and not logical. I also provided different breakpoint layouts to be optimized aross devices.</p>
+			</div>
+		</div>
+
+		<div class="grid grid-pad body-text">
+			<div class="col-4-12 portfolio-list-item">
+				<div class="portfolio-detail-thumbnail">
+					<img src="/join-flow/img/join_1.png"></img>
+				</div>
+			</div>
+			<div class="col-4-12 portfolio-list-item">
+				<div class="portfolio-detail-thumbnail">
+					<img src="/join-flow/img/join_2.png"></img>
+				</div>
+			</div>
+			<div class="col-4-12 portfolio-list-item">
+				<div class="portfolio-detail-thumbnail">
+					<img src="/join-flow/img/join_3.png"></img>
+				</div>
+			</div>
+		</div>			
+
+
+		<div class="inset-portfolio-detail">
+			<div class="col-1-1 portfolio-detail-section">
+				<h3><a href="/join-flow/img/join_wf.pdf" target="_blank">See more wireframes</a></h3>
+				<p>Design is going under the stakeholder review and to be deployed live on production environment to be A/B tested against the current design.</p>
+			</div>
+		</div>
+
+	</div>
+	<div class="footer">
+		<div class="grid">
+			<div class="col-1-1">
+				<p>&copy; Copyright 2016 Jade Yoo</p>
+			</div>
+		</div>
+	</div>
+
+</html>

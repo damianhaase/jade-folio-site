@@ -64,6 +64,20 @@ body, a {
 	color: #262626;
 }
 
+strong {
+	font-weight: 700;
+}
+
+.bullets1 {
+	list-style: initial;
+	padding-left: 2em;
+}
+
+.bullets2 {
+	list-style: circle;
+	padding-left: 4em;
+}
+
 a:link {
 	text-decoration: none;
 }
@@ -125,14 +139,6 @@ a:hover {
 .nav ul > li, .nav-home ul > li {
 	display: inline-block;
 	padding-right: .75em;
-}
-
-.nav-home {
-	margin-bottom: 3em;
-}
-
-.nav-home ul > li {
-	font-size: 1.25em;
 }
 
 .replace-text {
@@ -433,6 +439,41 @@ img.scale {
 	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/trainer-app-programming/img/trainer-app-programming-hero.jpg");
 }
 
+#ambient-experience-hero {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/ambient-experience/img/ambient-experience-hero.jpg");
+	background-position: center;
+}
+
+#amex-fraud-hero {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/amex-fraud/img/amex-fraud-hero.png");
+}
+
+#amex-ultimate-hero {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/amex-ultimate/img/amex-ultimate-hero.png");
+}
+
+#samsung-support-hero {
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7) ), url("/samsung-support/img/samsung-support-hero.png");
+}
+
+#ios-home-nav-hero {
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7) ), url("/ios-home-nav/img/ios-home-nav-hero.png");
+}
+
+#product-hero {
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7) ), url("/product/img/product-hero.jpg");
+}
+
+#pilates-purchase-hero {
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7) ), url("/pilates-purchase/img/pilates-purchase-hero.jpg");
+}
+
+#join-flow-hero {
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7) ), url("/join-flow/img/join-flow-hero.jpg");
+}
+
+
+
 .hero-image h1 {
 	font-size: 1.75em;
 	font-weight: 700;
@@ -459,7 +500,12 @@ img.scale {
 	margin-bottom: .5em;
 }
 
-.portfolio-detail-section p {
+.portfolio-detail-section h3 {
+	font-weight: 700;
+	margin-bottom: .5em;
+}
+
+.portfolio-detail-section > p ul {
 	margin-bottom: .5em;
 	color: #696969;
 	padding-right: 20%;
